@@ -3,7 +3,7 @@ import schedule
 import time
 from datetime import datetime
 
-# Вставь сюда свой токен
+#  токен
 TOKEN = 'my token'
 
 time.sleep(5)
@@ -24,7 +24,7 @@ def add_news(message):
     bot.reply_to(message, "Введите текст новости:")
     bot.register_next_step_handler(message, get_news_text)
 
-# Получаем текст новости от пользователя
+# Получение текста новости от пользователя
 def get_news_text(message):
     news_text = message.text
     bot.reply_to(message, "Когда вы хотите опубликовать эту новость? Введите дату и время в формате ДД.ММ.ГГГГ ЧЧ:ММ (например, 27.01.2025 14:30):")
@@ -33,7 +33,7 @@ def get_news_text(message):
     # Регистрация следующего шага для ввода даты и времени публикации
     bot.register_next_step_handler(message, get_news_datetime)
 
-# Получаем дату и время публикации
+# Получение даты и времени публикации
 def get_news_datetime(message):
     try:
         # Парсим дату и время из сообщения
