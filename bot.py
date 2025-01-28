@@ -4,7 +4,7 @@ import time
 from datetime import datetime
 
 # Вставь сюда свой токен
-TOKEN = '7915054238:AAGqatJTmwE3HYLUe941y29Fa_9MC0WFFX8'
+TOKEN = 'my token'
 
 time.sleep(5)
 
